@@ -9,14 +9,18 @@ from arithmetic import *
 
 
 def calculator(): #initialize loop that will execute given block of code
-    while True:
-        user_input = raw_input(">")#while True  
+    """calculator funtion
+    takes a user input and executes arithmetic.py
+    """
+    while True: 
+        user_input = raw_input(">")#takes input from user  
         if user_input == "q": # if q, quit (return none)
             return None
         tokens = user_input.split(" ") #tokenize input based on (" ")
         tokens[1] = int(tokens[1]) #convert strings to integers
         tokens[2] = int(tokens[2])
-         #take input from user
+         
+        
         if tokens[0]== "+": #if/elif/else arithmetic signs
             print add(tokens[1], tokens[2])
         elif tokens[0] == "-":
