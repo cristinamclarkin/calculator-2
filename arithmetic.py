@@ -1,50 +1,50 @@
-def add(*args): 
+def add(nums): 
     result = 0
-    for arg in args:
-        result = result + arg 
+    for num in nums:
+        result = result + num 
     return result 
 
-def subtract(*args):
-    result = args[0]
-    for arg in args[1:]:
-        result = result - arg
+def subtract(nums):
+    result = nums[0]
+    for num in nums[1:]:
+        result = result - num
     return result
 
-def multiply(*args):
+def multiply(nums):
     result = 1
-    for arg in args:
-        result = result * arg
+    for num in nums:
+        result = result * num
     return result
 
 
-def divide(*args):
-    # Need to turn at least argument to float for division to
+def divide(nums):
+    # Need to turn at least numument to float for division to
     # not be integer division
-    result = float(args[0])
-    for arg in args[1:]:
-        result = result / arg
+    result = float(nums[0])
+    for num in nums[1:]:
+        result = result / num
     return result
 
-def square(*args):
-    # Needs only one argument
-    for arg in args:
-        result = arg * arg
+def square(nums):
+    # Needs only one numument
+    for num in nums:
+        result = num * num
     return result
 
-def cube(*args):
-    # Needs only one argument
-    for arg in args:
-        result = arg * arg * arg
+def cube(nums):
+    # Needs only one numument
+    for num in nums:
+        result = num * num * num
     return result
 
-def power(*args):
-    result = args[0]
-    for arg in args[1:]:
-        result = result ** arg
+def power(nums):
+    result = nums[0]
+    for num in nums[1:]:
+        result = result ** num
     return result
 
-def mod(*args):
-    result = args[0]
-    for arg in args[1:]:
-        result = result % arg
+def mod(nums):
+    result = nums[0]
+    for num in nums[1:]:
+        result = result % num
     return result
